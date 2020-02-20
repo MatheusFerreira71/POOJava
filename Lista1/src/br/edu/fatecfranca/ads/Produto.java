@@ -2,9 +2,9 @@ package br.edu.fatecfranca.ads;
 
 public class Produto {
 
-    public int id, qtde;
-    public String descricao;
-    public float preco;
+    public int id = 0, qtde = 0;
+    public String descricao = "";
+    public float preco = 0;
 
     public Produto() {
 

@@ -6,11 +6,11 @@ public class Rio {
     public float nivel;
     public boolean poluido;
 
-    public void Rio() {
+    public Rio() {
 
     }
 
-    public void Rio(String nome, float nivel, boolean poluido) {
+    public Rio(String nome, float nivel, boolean poluido) {
         this.nome = nome;
         this.nivel = nivel;
         this.poluido = poluido;
