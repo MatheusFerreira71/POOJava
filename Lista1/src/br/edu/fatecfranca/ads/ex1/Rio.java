@@ -1,18 +1,20 @@
-package br.edu.fatecfranca.ads;
+package br.edu.fatecfranca.ads.ex1;
 
 public class Rio {
 
-    public String nome;
-    public float nivel;
-    public boolean poluido;
+    private String nome;
+    private float nivel;
+    private boolean poluido;
 
-    public Rio() {
-
-    }
-
+    /**
+     *
+     * @param nome
+     * @param nivel
+     * @param poluido
+     */
     public Rio(String nome, float nivel, boolean poluido) {
-        this.nome = nome;
         this.nivel = nivel;
+        this.nome = nome;
         this.poluido = poluido;
     }
 
@@ -20,7 +22,7 @@ public class Rio {
         this.nivel += x;
     }
 
-    public void ensolar(float x) {
+    public void ensolarar(float x) {
         this.nivel -= x;
     }
 

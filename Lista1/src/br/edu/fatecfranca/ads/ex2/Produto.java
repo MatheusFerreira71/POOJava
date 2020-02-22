@@ -1,16 +1,12 @@
-package br.edu.fatecfranca.ads;
+package br.edu.fatecfranca.ads.ex2;
 
 public class Produto {
 
-    public int id = 0, qtde = 0;
-    public String descricao = "";
-    public float preco = 0;
+    private int id = 0, qtde = 0;
+    private String descricao = "";
+    private float preco = 0;
 
-    public Produto() {
-
-    }
-
-    public Produto(int id, int qtde, String descricao, float peso) {
+    public Produto(int id, int qtde, String descricao, float preco) {
         this.id = id;
         this.qtde = qtde;
         this.descricao = descricao;
