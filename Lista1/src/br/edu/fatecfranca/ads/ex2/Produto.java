@@ -2,9 +2,9 @@ package br.edu.fatecfranca.ads.ex2;
 
 public class Produto {
 
-    private int id = 0, qtde = 0;
-    private String descricao = "";
-    private float preco = 0;
+    private int id, qtde;
+    private String descricao;
+    private float preco;
 
     public Produto(int id, int qtde, String descricao, float preco) {
         this.id = id;
