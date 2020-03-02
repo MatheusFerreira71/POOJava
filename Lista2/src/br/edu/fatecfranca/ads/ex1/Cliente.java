@@ -27,10 +27,13 @@ public class Cliente {
 
     public void setNumeroConta(String numeroConta) {
         if (numeroConta.length() == 8) {
-            if (numeroConta.indexOf("-") == 6) {
+            String nConta = Character.toString(numeroConta.charAt(7));
+            if (numeroConta.indexOf("-") == 6 && !"-".equals(nConta)) {
                 this.numeroConta = numeroConta;
             } else {
-                JOptionPane.showMessageDialog(null, "Número de conta inválido, coloque o - no penúltimo digito");
+                JOptionPane.showMessageDialog(null, "Número de conta inválido, "
+                        + "coloque o - no penúltimo digito");
+                this.numeroConta = "000000-0";  
             }
         } else {
             JOptionPane.showMessageDialog(null, "O número da conta deve ter 8 digitos!");
@@ -39,10 +42,13 @@ public class Cliente {
 
     public void setNumeroAgencia(String numeroAgencia) {
         if (numeroAgencia.length() == 6) {
-            if (numeroAgencia.indexOf("-") == 4) {
+            String nAgencia = Character.toString(numeroAgencia.charAt(7));
+            if (numeroAgencia.indexOf("-") == 4 && !"-".equals(nAgencia)) {
                 this.numeroAgencia = numeroAgencia;
             } else {
-                JOptionPane.showMessageDialog(null, "Número de agência inválido, coloque o - no penúltimo digito!");
+                JOptionPane.showMessageDialog(null, "Número de agência inválido,"
+                        + " coloque o - no penúltimo digito!");
+                this.numeroAgencia = "0000-0";
             }
         } else {
             JOptionPane.showMessageDialog(null, "O número da conta deve ter 8 digitos!");
@@ -54,6 +60,7 @@ public class Cliente {
             this.nome = nome;
         } else {
             JOptionPane.showMessageDialog(null, "O nome não pode ser maior que 30 caracteres!");
+            this.nome = "Teste";
         }
     }
 
@@ -62,6 +69,7 @@ public class Cliente {
             this.saldo = saldo;
         } else {
             JOptionPane.showMessageDialog(null, "O saldo não pode ser negativo");
+            this.saldo = 0;
         }
     }
 
