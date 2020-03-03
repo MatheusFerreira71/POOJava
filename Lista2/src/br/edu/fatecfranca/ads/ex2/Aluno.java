@@ -41,7 +41,7 @@ public class Aluno {
     }
 
     public void setNome(String nome) {
-        if (nome.length() >= 30) {
+        if (nome.length() <= 30) {
             this.nome = nome;
         } else {
             JOptionPane.showMessageDialog(null, "O nome do aluno pode ter no máximo 30 caracteres!");
