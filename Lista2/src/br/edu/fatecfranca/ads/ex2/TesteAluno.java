@@ -8,5 +8,11 @@ public class TesteAluno {
         
         JOptionPane.showMessageDialog(null, Pedro.toString());
         JOptionPane.showMessageDialog(null, "A média é: " + Pedro.notaFinal());
+        
+//        Pedro.nome = "Carlos";
+//        JOptionPane.showMessageDialog(null, Pedro.nome)); Os dois casos dão 
+//        erro de privilégios;
+
+        
     }
 }
