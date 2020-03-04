@@ -92,14 +92,22 @@ public class Aluno {
         this.setP1(p1);
         this.setP2(p2);
     }
-    
+
     //Métodos operacionais
     public float notaFinal() {
         return (this.p1 + this.p2) / 2;
     }
-    
+
     public String toString() {
         return "N° do Aluno: " + this.numeroAluno + "\nNome: " + this.nome + ""
                 + "\nIdade: " + this.idade;
+    }
+
+    public boolean passou() {
+        if (this.notaFinal() >= 6) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
