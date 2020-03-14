@@ -34,5 +34,4 @@ public class Voo {
     public String toString() {
         return "Voo{" + "numero=" + numero + ", destino=" + destino + '}';
     }
-
 }

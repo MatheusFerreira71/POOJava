@@ -32,7 +32,5 @@ public class Passageiro {
     @Override
     public String toString() {
         return "Passageiro{" + "nome=" + nome + ", cpf=" + cpf + '}';
-    }
-    
-    
+    }  
 }
