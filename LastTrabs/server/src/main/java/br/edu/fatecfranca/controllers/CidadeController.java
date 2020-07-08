@@ -18,7 +18,7 @@ import br.edu.fatecfranca.repositories.CidadeRepository;
 import br.edu.fatecfranca.entities.Cidade;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*")
 @RequestMapping("api/cidade")
 
 public class CidadeController {

@@ -61,10 +61,20 @@ function consulta() {
         const cel4 = document.createElement("td");
         cel4.textContent = bike.quadro;
         const cel5 = document.createElement("td");
-        const buttonRemove = '<button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>'
-        buttonRemove.setAttribute("onclick", `remove(${bike.id})`);
+        const buttonRemove = document.createElement('button');
+        buttonRemove.setAttribute('type', 'button');
+        buttonRemove.setAttribute('class', 'btn btn-danger');
+        const removeIcon = document.createElement('i');
+        removeIcon.setAttribute('class', 'far fa-trash-alt');
+        buttonRemove.appendChild(removeIcon);
+        buttonRemove.setAttribute('onclick', `remove(${bike.id})`);
         const cel6 = document.createElement("td");
-        const buttonUpdate = '<button type="button" class="btn btn-warning"><i class="far fa-edit"></i></button>'
+        const buttonUpdate = document.createElement('button');
+        buttonUpdate.setAttribute('type', 'button');
+        buttonUpdate.setAttribute('class', 'btn btn-warning');
+        const updateIcon = document.createElement('i');
+        updateIcon.setAttribute('class', 'far fa-edit');
+        buttonUpdate.appendChild(updateIcon);
         buttonUpdate.setAttribute(
           "onclick",
           `atualiza(${JSON.stringify(bike)})`

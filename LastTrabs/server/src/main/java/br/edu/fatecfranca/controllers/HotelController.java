@@ -18,7 +18,7 @@ import br.edu.fatecfranca.repositories.HotelRepository;
 import br.edu.fatecfranca.entities.Hotel;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*")
 @RequestMapping("api/hotel")
 
 public class HotelController {

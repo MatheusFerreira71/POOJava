@@ -17,7 +17,7 @@ import br.edu.fatecfranca.repositories.BikeRepository;
 import br.edu.fatecfranca.entities.Bike;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*")
 @RequestMapping("api/bike")
 public class BikeController {
 
