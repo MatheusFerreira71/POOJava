@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/28777e7990.js" crossorigin="anonymous"></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="../js/bike.js"></script>
+    <title>Bike</title>
+</head>
+
+<body onload="consulta()">
+    <header>
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="home.html">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Trivago.svg/220px-Trivago.svg.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoBotao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="conteudoBotao">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="bike.html">
+                                Bike
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cidade.html">
+                                Cidade
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hotel.html">
+                                Hotel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Cadastro de Bikes</h2>
+                    <form>
+                        <input type="number" id="id" hidden>
+                        <div class="form-group">
+                            <label for="marca"> Marca </label>
+                            <input type="text" id="marca" class="form-control" placeholder="Informa a marca.">
+                        </div>
+                        <div class="form-group">
+                            <label for="modelo"> Modelo </label>
+                            <input type="text" id="modelo" class="form-control" placeholder="Informe o modelo.">
+                        </div>
+                        <div class="form-group">
+                            <label for="aro"> Aro </label>
+                            <input type="number" id="aro" class="form-control" placeholder="Informe o aro.">
+                        </div>
+                        <div class="form-group">
+                            <label for="quadro"> Quadro </label>
+                            <input type="number" id="quadro" class="form-control" placeholder="Informe o quadro.">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="cadastra()"> Cadastrar </button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2> Lista de Bikes </h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover" id="tabela">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col"> Marca </th>
+                                    <th scope="col"> Modelo </th>
+                                    <th scope="col"> Aro </th>
+                                    <th scope="col"> Quadro </th>
+                                    <th scope="col"> Remove </th>
+                                    <th scope="col"> Atualiza </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
